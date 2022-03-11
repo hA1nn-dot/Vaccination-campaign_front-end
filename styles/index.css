@@ -84,8 +84,21 @@ nav > .logo {
 }
 
 .description {
-  background-color: red;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 12rem;
 }
+.description > h1 {
+  font-size: 4vmax;
+}
+.description > p {
+  font-size: 2rem;
+}
+.description > ul > li {
+  font-size: 2rem;
+}
+
 .image {
   background-color: #143581;
 }
@@ -99,5 +112,5 @@ nav > .logo {
   width: 800px;
   position: absolute;
   left: 20%;
-  top: 70%;
+  top: 67%;
 }
