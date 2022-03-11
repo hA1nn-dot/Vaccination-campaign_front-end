@@ -7,11 +7,13 @@
 :root {
   --btn-bg-color: #0d2356;
   --btn-bg-color-selected: #143581;
+  --grey-shadow: #585858;
+  --btn-color-text: #f2f2f2;
   --btn-shadow: #2a385a;
   --color-text: #202020;
 }
 body {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
 
@@ -98,19 +100,37 @@ nav > .logo {
 .description > ul > li {
   font-size: 2rem;
 }
-
-.image {
-  background-color: #143581;
-}
 .img {
   display: block;
 
   width: 950px;
 }
 .schedule-module {
-  background-color: green;
-  width: 800px;
   position: absolute;
   left: 20%;
   top: 67%;
+  background-color: #ffffff;
+  box-shadow: 0 9px 12px var(--grey-shadow);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+
+.schedule-module > form > .btn-primary {
+  margin-left: 20px;
+  padding: 10px 20px;
+}
+
+.btn-primary {
+  background-color: var(--btn-bg-color);
+  color: var(--btn-color-text);
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px var(--btn-shadow);
+}
+.btn-primary:hover {
+  cursor: pointer;
+  background-color: var(--btn-bg-color-selected);
 }
