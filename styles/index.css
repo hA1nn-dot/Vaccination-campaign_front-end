@@ -20,6 +20,11 @@ body {
 h1 {
   font-size: 36px;
 }
+h1,
+h2,
+h3 {
+  color: var(--btn-bg-color);
+}
 
 a {
   text-decoration: none;
@@ -95,10 +100,10 @@ nav > .logo {
   font-size: 4vmax;
 }
 .description > p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .description > ul > li {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .img {
   display: block;
@@ -108,7 +113,7 @@ nav > .logo {
 .schedule-module {
   position: absolute;
   left: 20%;
-  top: 67%;
+  top: 70%;
   background-color: #ffffff;
   box-shadow: 0 9px 12px var(--grey-shadow);
   border-radius: 4px;
@@ -133,4 +138,78 @@ nav > .logo {
 .btn-primary:hover {
   cursor: pointer;
   background-color: var(--btn-bg-color-selected);
+}
+
+/* Vaccines */
+.wrap {
+  width: 80%;
+  margin: auto;
+}
+.vaccines {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.vaccine-box {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.2;
+  width: 300px;
+  height: 150px;
+}
+
+/* Section Vaccine */
+.space-top {
+  margin-top: 100px;
+}
+.section-vaccine {
+  margin-top: 50px;
+}
+.section-vaccine__description {
+  width: 40%;
+  margin-bottom: 50px;
+}
+.bold {
+  font-size: 50px;
+}
+.secondary-text {
+  font-size: 20px;
+}
+.section-vaccine__benefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-vaccione__characteristics {
+  border-radius: 5px;
+  border: solid 3px #f4fbff;
+  width: 20%;
+  padding: 30px;
+}
+.section-vaccione__characteristics:hover {
+  box-shadow: 0 5px 10px 0.1px;
+}
+
+.vaccione-title {
+  margin-bottom: 15px;
+}
+.icon {
+  margin-bottom: 15px;
+  font-size: 35px;
+  background-color: #dae5ff;
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--btn-bg-color);
+}
+
+/* Before vaccine section */
+
+.before-vaccine {
+  background-color: green;
+}
+.before-vaccine__img {
+  width: 40%;
 }
